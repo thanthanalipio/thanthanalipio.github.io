@@ -1,0 +1,184 @@
+﻿body {
+  overflow: hidden;
+}
+.main-content {
+  background: url(../img/bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  height: 100vh;
+  background-attachment: fixed;
+  font-family: 'Josefin Slab';
+  position: relative;
+  overflow: hidden;
+}
+.main-content .section-home {
+  padding-top: 150px;
+}
+.main-content .intro {
+  position: absolute;
+  left: 40%;
+  bottom: 0;
+  color: #f2f2f2;
+  /*incase vw didnt work*/
+  font-size: 40px;
+  font-size: 3vw;
+}
+.main-content .intro span {
+  color: red;
+}
+.main-content .arrow-holder {
+  margin-top: 40%;
+}
+.main-content .arrow-holder .arrow-left {
+  float: left;
+}
+.main-content .arrow-holder .arrow-left + span {
+  left: 10%;
+}
+.main-content .arrow-holder .arrow-right {
+  float: right;
+}
+.main-content .arrow-holder .arrow-right + span {
+  right: 10%;
+}
+/*animated style*/
+.arrow-word {
+  position: absolute;
+  margin-top: 3.6%;
+  display: none;
+}
+.fadeInRight,
+.fadeInLeft {
+  display: block;
+}
+#work {
+  background: url(../img/bg3.jpg) no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  padding: 250px 30px 100px 30px;
+  left: -2000px;
+  top: 0;
+  z-index: 1;
+  transition: left 1s ease-in-out;
+}
+#work .work-holder {
+  padding-left: 20px;
+}
+#work .work-holder figure {
+  overflow: hidden;
+  opacity: 0;
+  transform: scale(0.5);
+  transition: .5s;
+  position: relative;
+  cursor: pointer;
+  padding: 0 5px;
+  margin-bottom: 10px;
+}
+#work .work-holder figure img {
+  transform: scale(1);
+  transition: 0.5s ease-in-out;
+}
+#work .work-holder figure:hover figcaption {
+  left: 0;
+  transition: left 0.5s ease-in-out;
+}
+#work .work-holder figure:hover img {
+  transform: scale(1.2);
+  transition: 0.5s ease-in-out;
+}
+#work .work-holder figure.is-showing {
+  opacity: 1;
+  transform: scale(1);
+  transition: all .8s;
+  transition-delay: .8s;
+}
+#work .work-holder figure figcaption {
+  position: absolute;
+  left: -40%;
+  bottom: 0;
+  transition: 0.5s ease-in-out;
+  margin-left: 10px;
+}
+#work.left-center {
+  left: 0;
+  transition: 0.7s ease-in-out;
+}
+#info {
+  background: url(../img/bg2.jpg) no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  padding: 250px 30px 100px 30px;
+  left: 2000px;
+  top: 0;
+  z-index: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transition: left 1s ease-in-out;
+}
+#info.right-center {
+  left: 0;
+  transition: 0.7s ease-in-out;
+}
+#info .profile-holder .media .media-left img {
+  width: 200px;
+}
+#info .profile-holder .media > * {
+  opacity: 0;
+  transform: translateX(50px);
+  transition: .5s;
+}
+#info .profile-holder .media > *.is-showing {
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 1s;
+  transition-delay: .8s;
+}
+/*Scrollbar custom*/
+#info::-webkit-scrollbar {
+  width: 10px;
+}
+#info::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+}
+#info::-webkit-scrollbar-thumb {
+  background-color: #666;
+  outline: 1px solid slategrey;
+  border-radius: 5px;
+}
+/* --------------------------------------------------------------------------
+	=responsive variations
+--------------------------------------------------------------------------- */
+/* Extra small devices (phones, up to 480px) */
+@media screen and (max-width: 767px) {
+  .main-content .intro {
+    left: 25%;
+    /*incase vw didnt work*/
+    font-size: 40px;
+    font-size: 7vw;
+  }
+  .main-content #info {
+    padding: 200px 5px 20px 5px;
+  }
+  .main-content #info p {
+    width: 90%;
+  }
+  .main-content #work {
+    padding: 200px 5px 20px 5px;
+  }
+}
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .main-content .intro {
+    left: 30%;
+    /*incase vw didnt work*/
+    font-size: 40px;
+    font-size: 5vw;
+  }
+}
+/* tablets/desktops and up ----------- */
+/* large desktops and up ----------- */

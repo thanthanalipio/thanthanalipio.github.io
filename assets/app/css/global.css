@@ -1,0 +1,90 @@
+﻿/* ---------------------------------------------------------------------------
+                    
+    tAlipio
+    Copyright (c) 2015 tAlipio
+    Hand-crafted by Jonathan Alipio
+    
+--------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------
+    =Fonts
+--------------------------------------------------------------------------- */
+@font-face {
+  font-family: 'Josefin Slab';
+  src: url('../fonts/JosefinSlab-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Josefin Slab Bold';
+  src: url('../fonts/JosefinSlab-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Josefin Slab Semibold';
+  src: url('../fonts/JosefinSlab-SemiBold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Josefin Slab BoldItalic';
+  src: url('../fonts/JosefinSlab-BoldItalic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+/* --------------------------------------------------------------------------
+    =Colors
+--------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------
+    =Controls
+--------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------
+    =Global
+--------------------------------------------------------------------------- */
+body {
+  /*background: url(../img/bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    height: 100vh;
+    background-attachment: fixed;
+    font-family: 'Josefin Slab';*/
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Josefin Slab';
+}
+h1 b,
+h2 b,
+h3 b,
+h4 b,
+h5 b,
+h6 b {
+  font-family: 'Josefin Slab Bold';
+}
+p {
+  font-family: 'HelveticaNeue', Arial, Helvetica, sans-serif;
+  color: #000;
+}
+a {
+  color: #000;
+}
+a.underline {
+  text-decoration: underline;
+}
+.close {
+  text-shadow: none;
+}
+.text-center {
+  text-align: center !important;
+}
+/* --------------------------------------------------------------------------
+	=responsive variations
+--------------------------------------------------------------------------- */
+/* Extra small devices (phones, up to 480px) */
+/* Small devices (tablets, 768px and up) */
+/* tablets/desktops and up ----------- */
+/* large desktops and up ----------- */

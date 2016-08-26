@@ -1,0 +1,22 @@
+﻿[
+  {
+    "outputFile": "assets/app/css/application.css",
+    "inputFile": "assets/app/css/application.less"
+  },
+  {
+    "outputFile": "assets/app/css/footer.css",
+    "inputFile": "assets/app/css/footer.less"
+  },
+  {
+    "outputFile": "assets/app/css/global.css",
+    "inputFile": "assets/app/css/global.less"
+  },
+  {
+    "outputFile": "assets/app/css/header.css",
+    "inputFile": "assets/app/css/header.less"
+  },
+  {
+    "outputFile": "assets/app/css/home.css",
+    "inputFile": "assets/app/css/home.less"
+  }
+]
