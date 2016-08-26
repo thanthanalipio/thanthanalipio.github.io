@@ -9,29 +9,29 @@
     =Fonts
 --------------------------------------------------------------------------- */
 @font-face {
+  font-family: 'Lato Regular';
+  src: url('../fonts/lato-regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Lato Bold';
+  src: url('../fonts/lato-bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
   font-family: 'Josefin Slab';
   src: url('../fonts/JosefinSlab-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
-@font-face {
-  font-family: 'Josefin Slab Bold';
-  src: url('../fonts/JosefinSlab-Bold.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Josefin Slab Semibold';
-  src: url('../fonts/JosefinSlab-SemiBold.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Josefin Slab BoldItalic';
-  src: url('../fonts/JosefinSlab-BoldItalic.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
+/*@font-face {
+    font-family: 'Josefin Slab Bold';  
+    src: url('../fonts/JosefinSlab-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}*/
 /* --------------------------------------------------------------------------
     =Colors
 --------------------------------------------------------------------------- */
@@ -41,21 +41,13 @@
 /* --------------------------------------------------------------------------
     =Global
 --------------------------------------------------------------------------- */
-body {
-  /*background: url(../img/bg.jpg) no-repeat;
-    background-size: cover;
-    background-position: center bottom;
-    height: 100vh;
-    background-attachment: fixed;
-    font-family: 'Josefin Slab';*/
-}
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: 'Josefin Slab';
+  font-family: 'Lato Regular';
 }
 h1 b,
 h2 b,
@@ -63,17 +55,14 @@ h3 b,
 h4 b,
 h5 b,
 h6 b {
-  font-family: 'Josefin Slab Bold';
+  font-family: 'Lato Bold';
 }
 p {
-  font-family: 'HelveticaNeue', Arial, Helvetica, sans-serif;
+  font-family: 'Lato Regular';
   color: #000;
 }
 a {
   color: #000;
-}
-a.underline {
-  text-decoration: underline;
 }
 .close {
   text-shadow: none;
@@ -91,11 +80,12 @@ a.underline {
 .navbar {
   background: none;
   border: none;
-  font-family: 'Josefin Slab Semibold';
+  font-family: 'Lato Regular';
   z-index: 3;
 }
 .navbar .navbar-brand {
   width: 156px;
+  transition: .5s;
 }
 .navbar .navbar-nav {
   margin-top: 30px;
@@ -160,7 +150,7 @@ a.underline {
   top: 50%;
   transform: translateY(-50%);
   font-size: 50px;
-  font-family: 'Josefin Slab Bold';
+  font-family: 'Lato Bold';
   font-weight: 400;
   text-align: center;
 }
@@ -221,6 +211,15 @@ a.underline {
 .overlay.open li:nth-of-type(4) {
   animation-delay: .50s;
 }
+.addHeaderBg {
+  background: #1b1b1b;
+  height: 88px;
+  transition: .5s;
+}
+.logo-resize {
+  transform: scale(0.5);
+  transition: .5s;
+}
 /* --------------------------------------------------------------------------
 	=responsive variations
 --------------------------------------------------------------------------- */
@@ -237,7 +236,7 @@ body {
   background-position: center bottom;
   height: 100vh;
   background-attachment: fixed;
-  font-family: 'Josefin Slab';
+  font-family: 'Lato Regular';
   position: relative;
   overflow: hidden;
 }
@@ -245,6 +244,7 @@ body {
   padding-top: 150px;
 }
 .main-content .intro {
+  font-family: 'Josefin Slab';
   position: absolute;
   left: 40%;
   bottom: 0;
@@ -252,9 +252,10 @@ body {
   /*incase vw didnt work*/
   font-size: 40px;
   font-size: 3vw;
+  margin-left: -5%;
 }
-.main-content .intro span {
-  color: red;
+.main-content .intro b {
+  font-family: 'Josefin Slab Bold';
 }
 .main-content .arrow-holder {
   margin-top: 40%;
@@ -262,29 +263,21 @@ body {
 .main-content .arrow-holder .arrow-left {
   float: left;
 }
-.main-content .arrow-holder .arrow-left + span {
-  left: 10%;
-}
 .main-content .arrow-holder .arrow-right {
   float: right;
-}
-.main-content .arrow-holder .arrow-right + span {
-  right: 10%;
 }
 /*animated style*/
 .arrow-word {
   position: absolute;
-  margin-top: 3.6%;
+  top: 69%;
+  /*margin-top: 12.6%;*/
   display: none;
-<<<<<<< HEAD
 }
 .arrow-left > .arrow-word {
   left: 30%;
 }
 .arrow-right > .arrow-word {
   right: 30%;
-=======
->>>>>>> parent of f4c4510... New changes
 }
 .fadeInRight,
 .fadeInLeft {
@@ -296,12 +289,11 @@ body {
   position: absolute;
   width: 100%;
   height: 100vh;
-  padding: 250px 30px 100px 30px;
+  padding: 140px 30px 0 30px;
   left: -2000px;
   top: 0;
   z-index: 1;
   transition: left 1s ease-in-out;
-<<<<<<< HEAD
   overflow-y: auto;
   overflow-x: hidden;
 }
@@ -310,8 +302,6 @@ body {
 }
 #work .arrow-holder .arrow-word {
   top: 79%;
-=======
->>>>>>> parent of f4c4510... New changes
 }
 #work .work-holder {
   padding-left: 20px;
@@ -323,29 +313,23 @@ body {
   transition: .5s;
   position: relative;
   cursor: pointer;
-<<<<<<< HEAD
   padding: 0 10px;
   margin-bottom: 10px;
   height: 198px;
 }
 #work .work-holder figure .work-container {
   overflow: hidden;
-=======
-  padding: 0 5px;
-  margin-bottom: 10px;
->>>>>>> parent of f4c4510... New changes
 }
 #work .work-holder figure img {
-  transform: scale(1);
-  transition: 0.5s ease-in-out;
+  width: 100%;
+  transition: .5s;
+}
+#work .work-holder figure img:hover {
+  transform: scale(1.1);
 }
 #work .work-holder figure:hover figcaption {
-  left: 0;
-  transition: left 0.5s ease-in-out;
-}
-#work .work-holder figure:hover img {
-  transform: scale(1.2);
-  transition: 0.5s ease-in-out;
+  bottom: 0;
+  transition: bottom 0.5s ease-in-out;
 }
 #work .work-holder figure.is-showing {
   opacity: 1;
@@ -355,18 +339,11 @@ body {
 }
 #work .work-holder figure figcaption {
   position: absolute;
-<<<<<<< HEAD
   background: #1b1b1b;
   color: #b9b9b9;
   width: 95.4%;
   padding: 10px;
   bottom: -40%;
-=======
-  left: -40%;
-  bottom: 0;
-  transition: 0.5s ease-in-out;
-  margin-left: 10px;
->>>>>>> parent of f4c4510... New changes
 }
 #work.left-center {
   left: 0;
@@ -385,13 +362,29 @@ body {
   overflow-y: auto;
   overflow-x: hidden;
   transition: left 1s ease-in-out;
+  color: #1b1b1b;
 }
 #info.right-center {
   left: 0;
   transition: 0.7s ease-in-out;
 }
+#info .profile-holder .media {
+  padding: 10px;
+}
+#info .profile-holder .media .media-left {
+  border-radius: 50%;
+  box-shadow: 0 0 5px #666;
+  padding: 5px;
+}
 #info .profile-holder .media .media-left img {
   width: 200px;
+}
+#info .profile-holder .media .media-body {
+  padding-left: 50px;
+}
+#info .profile-holder .media .media-body p {
+  color: #888;
+  margin-left: 10px;
 }
 #info .profile-holder .media > * {
   opacity: 0;
@@ -404,15 +397,25 @@ body {
   transition: all 1s;
   transition-delay: .8s;
 }
+#info .social-holder i {
+  width: 35px;
+  height: 35px;
+  color: #fff;
+  padding: 10px;
+  background: #1b1b1b;
+  text-align: center;
+  border-radius: 50px;
+}
 /*Scrollbar custom*/
-#info::-webkit-scrollbar {
+::-webkit-scrollbar {
   width: 10px;
 }
-#info::-webkit-scrollbar-track {
+::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   border-radius: 5px;
 }
-#info::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
   background-color: #666;
   outline: 1px solid slategrey;
   border-radius: 5px;
@@ -423,7 +426,8 @@ body {
 /* Extra small devices (phones, up to 480px) */
 @media screen and (max-width: 767px) {
   .main-content .intro {
-    left: 25%;
+    left: 50%;
+    margin-left: -40%;
     /*incase vw didnt work*/
     font-size: 40px;
     font-size: 7vw;
@@ -437,20 +441,21 @@ body {
   .main-content #work {
     padding: 200px 5px 20px 5px;
   }
-<<<<<<< HEAD
   .main-content #work figure {
     margin-bottom: 20px;
   }
-=======
->>>>>>> parent of f4c4510... New changes
 }
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991px) {
   .main-content .intro {
-    left: 30%;
+    left: 50%;
+    margin-left: -25%;
     /*incase vw didnt work*/
     font-size: 40px;
-    font-size: 5vw;
+    font-size: 4vw;
+  }
+  #work .work-holder figure {
+    height: 130px;
   }
 }
 /* tablets/desktops and up ----------- */
