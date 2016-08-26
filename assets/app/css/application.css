@@ -303,6 +303,10 @@ body {
 #work .arrow-holder .arrow-word {
   top: 79%;
 }
+#work .arrow-holder .arrow-right .arrow-word {
+  right: 50%;
+  color: #fff;
+}
 #work .work-holder {
   padding-left: 20px;
 }
