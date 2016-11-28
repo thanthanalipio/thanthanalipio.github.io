@@ -1,0 +1,112 @@
+﻿
+/* ---------------------------------------------------------------------------
+                    
+    tAlipio
+    Copyright (c) 2015 tAlipio
+    Hand-crafted by Jonathan Alipio
+    
+--------------------------------------------------------------------------- */
+
+/* --------------------------------------------------------------------------
+    =Fonts
+--------------------------------------------------------------------------- */
+
+@font-face {
+    font-family: 'Lato Regular';  
+    src: url('../fonts/lato-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Lato Bold';  
+    src: url('../fonts/lato-bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Josefin Slab';  
+    src: url('../fonts/JosefinSlab-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*@font-face {
+    font-family: 'Josefin Slab Bold';  
+    src: url('../fonts/JosefinSlab-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}*/
+
+/* --------------------------------------------------------------------------
+    =Colors
+--------------------------------------------------------------------------- */
+@color-black: #000;
+@color-white: #fff;
+@color-red: #ff5252;
+@color-gray: #1b1b1b;
+@color-light-gray: #b9b9b9;
+@color-light-gray2: #888;
+
+
+//MIXINS
+.size(@width, @height){
+    width: @width;
+    height: @height;
+}
+
+/* --------------------------------------------------------------------------
+    =Controls
+--------------------------------------------------------------------------- */
+
+
+/* --------------------------------------------------------------------------
+    =Global
+--------------------------------------------------------------------------- */
+body {    
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lato Regular'; 
+    b{
+        font-family: 'Lato Bold';  
+    }
+}
+
+p {
+    font-family: 'Lato Regular';
+    color: @color-black;
+}
+
+a {
+    color: @color-black;
+
+}
+
+.close {
+    text-shadow: none;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+
+/* --------------------------------------------------------------------------
+	=responsive variations
+--------------------------------------------------------------------------- */
+
+/* Extra small devices (phones, up to 480px) */
+@media screen and (max-width: 767px) {
+    
+}
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+    
+}
+/* tablets/desktops and up ----------- */
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+/* large desktops and up ----------- */
+@media screen and (min-width: 1200px) {
+}
+
