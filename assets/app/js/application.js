@@ -26,8 +26,6 @@
         $('.button_container').removeClass('active');
         $('#info').removeClass('right-center');
         $('#work').addClass('left-center');
-
-        navremove();
         animate();
     });
 
@@ -41,8 +39,6 @@
         $('.button_container').removeClass('active');
         $('#work').removeClass('left-center');
         $('#info').addClass('right-center');
-
-        navremove();
         animate();
     });
     ////Home
@@ -51,8 +47,6 @@
         $('.button_container').removeClass('active');
         $('#work').removeClass('left-center');
         $('#info').removeClass('right-center');
-
-        navremove();
         animate();
     });
 
@@ -66,12 +60,6 @@
         $('#info').removeClass('right-center');
         animate();
     });
-
-    //Navbar Remove
-    function navremove() {
-        $(".navbar").removeClass("addHeaderBg");
-        $(".navbar-brand").removeClass("logo-resize");
-    }
 
     ///Div Animate INFO
     function animate() {
@@ -93,7 +81,7 @@
         }
         else {
             $('.profile-holder .media > *').removeClass('is-showing');
-            $('.work-holder > figure').removeClass('is-showing');            
+            $('.work-holder > figure').removeClass('is-showing');
         }
     }
 
@@ -114,6 +102,7 @@
         $(this).toggleClass('active');
         $('#overlay').toggleClass('open');
     });
+<<<<<<< HEAD
 
     //Scroll Menu
     $('#work').scroll(function () {
@@ -136,10 +125,15 @@
             $(".navbar-brand").removeClass("logo-resize");
         }
     });
+<<<<<<< HEAD
 
     //Pre loader
     $(window).load(function () {
         // Animate loader off screen
         $(".se-pre-con").fadeOut("slow");;
     });
+=======
+>>>>>>> origin/master
+=======
+>>>>>>> parent of f4c4510... New changes
 });

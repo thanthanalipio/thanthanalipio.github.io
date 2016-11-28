@@ -9,29 +9,29 @@
     =Fonts
 --------------------------------------------------------------------------- */
 @font-face {
-  font-family: 'Lato Regular';
-  src: url('../fonts/lato-regular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Lato Bold';
-  src: url('../fonts/lato-bold.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
   font-family: 'Josefin Slab';
   src: url('../fonts/JosefinSlab-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
-/*@font-face {
-    font-family: 'Josefin Slab Bold';  
-    src: url('../fonts/JosefinSlab-Bold.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}*/
+@font-face {
+  font-family: 'Josefin Slab Bold';
+  src: url('../fonts/JosefinSlab-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Josefin Slab Semibold';
+  src: url('../fonts/JosefinSlab-SemiBold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Josefin Slab BoldItalic';
+  src: url('../fonts/JosefinSlab-BoldItalic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 /* --------------------------------------------------------------------------
     =Colors
 --------------------------------------------------------------------------- */
@@ -41,13 +41,21 @@
 /* --------------------------------------------------------------------------
     =Global
 --------------------------------------------------------------------------- */
+body {
+  /*background: url(../img/bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    height: 100vh;
+    background-attachment: fixed;
+    font-family: 'Josefin Slab';*/
+}
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: 'Lato Regular';
+  font-family: 'Josefin Slab';
 }
 h1 b,
 h2 b,
@@ -55,14 +63,17 @@ h3 b,
 h4 b,
 h5 b,
 h6 b {
-  font-family: 'Lato Bold';
+  font-family: 'Josefin Slab Bold';
 }
 p {
-  font-family: 'Lato Regular';
+  font-family: 'HelveticaNeue', Arial, Helvetica, sans-serif;
   color: #000;
 }
 a {
   color: #000;
+}
+a.underline {
+  text-decoration: underline;
 }
 .close {
   text-shadow: none;
